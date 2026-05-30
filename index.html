@@ -495,7 +495,7 @@
     <h2>できること（全体像）</h2>
     <div class="grid-4">
       <div class="card"><div class="icon-num">01</div><h3>マイ／店舗シフト</h3><div class="desc">自分の確定シフトと店舗全体のシフトをカード・日別ガントで確認。</div></div>
-      <div class="card"><div class="icon-num">02</div><h3>打刻</h3><div class="desc">ブラウザでワンタップ出退勤。15分単位の自動まるめに対応。</div></div>
+      <div class="card"><div class="icon-num">02</div><h3>打刻</h3><div class="desc">スマホ・PCのブラウザでワンタップ出退勤。タイムカード不要。</div></div>
       <div class="card"><div class="icon-num">03</div><h3>シフト希望／作成</h3><div class="desc">希望提出 → 希望から下書き生成 → 公開でマイシフトに反映。</div></div>
       <div class="card"><div class="icon-num">04</div><h3>出勤管理</h3><div class="desc">打刻の確認・修正。予定シフトとのズレを自動で警告。</div></div>
       <div class="card"><div class="icon-num">05</div><h3>給与計算</h3><div class="desc">深夜・残業など割増を自動算出。Square形式CSVを出力。</div></div>
@@ -522,6 +522,39 @@
   </div>
 </section>
 
+<!-- ─── アルバイト向けメリット ─── -->
+<section class="slide start">
+  <span class="slide-number"></span>
+  <div class="slide-content">
+    <span class="slide-tag">スタッフのみなさんへ</span>
+    <h2>アルバイトも、こんなに便利になります。</h2>
+    <p class="lead">スマホひとつで、シフトまわりの「めんどう」がぜんぶラクに。難しい操作はありません。</p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon-num">📅</div>
+        <h3>自分のシフトがいつでも見られる</h3>
+        <div class="desc" style="line-height:1.65;">紙やLINEをさかのぼって探す必要なし。<b>マイシフト</b>を開けば、確定シフト・出勤日数・合計時間がひと目で。</div>
+      </div>
+      <div class="card">
+        <div class="icon-num">👆</div>
+        <h3>出退勤はボタン1つ</h3>
+        <div class="desc" style="line-height:1.65;">タイムカードや手書き不要。出勤・退勤を<b>スマホでその場でポチッと</b>。経過時間も自動表示。</div>
+      </div>
+      <div class="card">
+        <div class="icon-num">✍️</div>
+        <h3>来月の希望もアプリから提出</h3>
+        <div class="desc" style="line-height:1.65;">「この日は入れる／休みたい」を<b>フォームで選んで一括保存</b>。口頭やLINEでのやり取りが不要に。</div>
+      </div>
+      <div class="card">
+        <div class="icon-num">👀</div>
+        <h3>店舗全体のシフトも見える</h3>
+        <div class="desc" style="line-height:1.65;">その日<b>誰と一緒か・忙しい日か</b>が事前に分かる。自分のシフトは色付きハイライト。</div>
+      </div>
+    </div>
+    <div class="callout tip">📱 ホーム画面に追加すれば<b>アプリ感覚でタップ一発起動</b>。ログインは30日間保持されるので、毎回の入力も不要です。</div>
+  </div>
+</section>
+
 <!-- ─── 6. 操作①打刻 ─── -->
 <section class="slide start">
   <span class="slide-number"></span>
@@ -533,7 +566,7 @@
       <li><div class="st-title">勤務する店舗を選んで「出勤」を押す</div><div class="st-desc">出勤中はカードが青くなり、経過時間が表示されます。</div></li>
       <li><div class="st-title">退勤時に「退勤」を押す</div><div class="st-desc">これで1回の勤務が記録されます。今月の打刻履歴も下に表示。</div></li>
     </ol>
-    <div class="callout">⏱ <b>15分まるめ</b>：給与の計算では、<b>出勤は15分繰り上げ</b>（例 <span class="code">10:10 → 10:15</span>）、<b>退勤は15分切り捨て</b>（例 <span class="code">22:47 → 22:45</span>）で自動処理されます。打刻の記録自体はそのまま残ります。</div>
+    <div class="callout tip">💡 出退勤の記録はすべて自動で保存されます。打刻し忘れた場合も、本部の「出勤管理」から後で修正できます。</div>
   </div>
 </section>
 
@@ -668,7 +701,6 @@
       <div class="table-row t2 header"><div>項目</div><div>内容</div></div>
       <div class="table-row t2"><div><strong>時間の入力</strong></div><div><span class="code">15-24</span>＝15時〜24時 ／ <span class="code">15-29</span>＝15時〜翌5時 ／ <span class="code">15:30-22</span>＝分指定も可</div></div>
       <div class="table-row t2"><div><strong>お休み</strong></div><div>シフト表のセルは空欄でOK（<span class="code neutral">休</span><span class="code neutral">×</span><span class="code neutral">ー</span>でも可）</div></div>
-      <div class="table-row t2"><div><strong>打刻のまるめ</strong></div><div>出勤＝15分繰り上げ（10:10→10:15）／退勤＝15分切り捨て（22:47→22:45）</div></div>
       <div class="table-row t2"><div><strong>休憩の自動控除</strong></div><div>アルバイト6h以上＝60分／社員6h超＝90分（退勤直前に控除）</div></div>
       <div class="table-row t2"><div><strong>深夜帯</strong></div><div>22:00〜翌5:00 が深夜（×1.25）。出退勤からアプリが自動判定</div></div>
       <div class="table-row t2"><div><strong>予定とのズレ警告</strong></div><div>打刻が予定シフトと60分以上ズレると出勤管理で⚠表示</div></div>
